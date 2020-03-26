@@ -1,0 +1,147 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.linksDecor{
+    color: white;
+    text-decoration: none;    
+}
+
+::-webkit-scrollbar { /* chrome based */
+    width: 0px;  /* ширина scrollbar'a */
+    background: transparent;  /* опционально */
+}
+
+body{
+    background-color: gray;
+    color:white;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: flex-start;
+}
+
+.navbar a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+.navbar a:first-child{
+    margin-left: 100px;
+}
+
+.navbar__links{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.navbar__links * {
+    align-self: center;
+    margin: 0px 15px;
+}
+
+.navnar__loginform {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+.navnar__loginform .btn {
+    align-self: center;
+    margin-right: 10px;
+}
+
+
+
+.container { 
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+    text-shadow: black 1px 1px 0, black -1px -1px 0, 
+                 black -1px 1px 0, black 1px -1px 0;
+    font-size: larger;
+}
+
+section#welcome{
+    background: url('../img/engine1.jpg') no-repeat center center/cover;;
+}
+section#team {
+    background: url('../img/engine2.jpg') no-repeat center center/cover;;
+}
+section#workprogress{
+    background: url('../img/engine5.jpg') no-repeat center center/cover;;
+    text-align: left;
+
+}
+section#linkSection{
+    background: url('../img/engine6.jpg') no-repeat center center/cover;;
+}
+
+
+#github{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#linkSection__links{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    /* background: rgba(255, 255, 255,0.3); */
+}
+
+#team__table {
+    border-spacing: 0;
+    text-align: center;    
+}
+#team__table a{
+    text-decoration: none;
+    color: white;
+}
+#team__table th{
+    border-style: solid;
+    border-width: 1px;
+    background: rgba(128, 128, 128,0.7);
+    padding: 10px 20px;
+}
+#team__table td {
+    border-style: solid;
+}
+#team__table td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    background: rgba(0, 0, 0,0.7);
+    padding: 10px;
+}
+
+#team__table tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+#team__table tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
