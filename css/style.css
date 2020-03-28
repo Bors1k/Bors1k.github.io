@@ -98,8 +98,6 @@ section#team {
 }
 section#gallery{
     background: rgba(0,0,0,0.7);
-    flex-direction: row;
-    text-align: left;
 
 }
 section#linkSection{
@@ -181,6 +179,6 @@ section#linkSection{
 
 @media screen and (max-width: 360px){
     section#welcome{
-        background: red;
+/*  */
     }
 }
