@@ -1,5 +1,10 @@
+@font-face {
+    font-family: Gilory;
+    src: url("../fonts/Gilroy-Light.otf");
+}
+
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Gilory;
     margin: 0;
     padding: 0;
 }
@@ -81,24 +86,40 @@ section {
     width: 100%;
     height: 100vh;
     scroll-snap-align: center;
-    text-shadow: black 1px 1px 0, black -1px -1px 0, 
-                 black -1px 1px 0, black 1px -1px 0;
     font-size: larger;
 }
 
 section#welcome{
-    background: url('../img/engine1.jpg') no-repeat center center/cover;;
+    background: rgba(0,0,0,0.7);
 }
 section#team {
-    background: url('../img/engine2.jpg') no-repeat center center/cover;;
+    background: white;
+    color: black;
 }
-section#workprogress{
-    background: url('../img/engine5.jpg') no-repeat center center/cover;;
+section#gallery{
+    background: rgba(0,0,0,0.7);
+    flex-direction: row;
     text-align: left;
 
 }
 section#linkSection{
-    background: url('../img/engine6.jpg') no-repeat center center/cover;;
+    background: white;
+    color: black;;
+}
+
+.gallery__images{ 
+    /* border: red solid 1px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 80%;
+}
+.gallery__images img{
+    width: 300px;
+    height: 300px;
 }
 
 
@@ -111,7 +132,7 @@ section#linkSection{
 #linkSection__links{
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     /* background: rgba(255, 255, 255,0.3); */
 }
 
@@ -144,4 +165,22 @@ section#linkSection{
 }
 #team__table tr:first-child th:last-child {
     border-top-right-radius: 10px;
+}
+
+.gallery__container{
+    width: 1050px;
+}
+#gallerySlider img{
+    width: 1050px;
+    height: 600px;
+}
+
+.team__gallery{
+    width: 90%;
+}
+
+@media screen and (max-width: 360px){
+    section#welcome{
+        background: red;
+    }
 }

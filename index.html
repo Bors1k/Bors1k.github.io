@@ -3,73 +3,247 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>M1_M72_Project</title>
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/lightslider.js"></script>
+    <title>WS</title>
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $("#gallerySlider").lightSlider({
+            gallery: true,
+            item: 1,
+            loop: true,
+            slideMargin: 0,
+            thumbItem: 5
+          });
+          $("#teamSlider").lightSlider({
+            item:4,
+            loop:false,
+            autoWidth:true
+          });
+        });
+    </script>
 </head>
 <body>
-    <div class="container">
+      <div class="container">
         <nav class="navbar">
             <div class="navbar__links">  
                 <a href="#welcome" style="margin-left: 10px; display: block;">Home</a>
                 <a href="#team">Team</a>
-                <a href="#workprogress">Progress</a>
+                <a href="#gallery">Gallery</a>
                 <a href="#linkSection">Links</a>
             </div>
         </nav>
         <section id="welcome">
-            <h1>Разработка задания для WS "Инженерный дизайн CAD"</h1>
-            <h2>M1_M72_Project</h2>
-            <p style="width: 60%;">Разработать полный комплект файлов для проведения первого модуля
+            <h1 style="margin-bottom: 10px;">Разработка задания для WS "Инженерный дизайн CAD"</h1>
+            <p style="width: 80%;">В настоящее время все большую популярность приобретают
+                соревнования профессионального мастерства по стандартам WorldSkills. Но комплектов заданий, 
+                используя которые можно было бы тренироваться попросту не производятся. 
+                <p>Поэтому нашей задачей является</p>
+                <P style="width: 80%;">Разработать полный комплект файлов для проведения первого модуля
                 чемпионата по стандартам WS “Инженерный дизайн CAD”. Необходимо
                 выбрать подходящую модель, разбить ее на подсборки и обозначить какие
                 детали буду моделироваться участником, а какие участник будет получать
                 готовыми. Выбрать детали и подсборки для создания чертежей, а также
                 придумать сценарий для анимации и фотореалистичного изображения.
                 Придумать текстовую часть задания и критерии проверки.</p>
-                Выбранную нами модель, для данного задания можно найти по <a style="color: white;" href="https://grabcad.com/library/engine-gearbox-for-the-m72-project-1">ссылке</a>
         </section>
         <section id="team">
-            <h1 style="margin-bottom: 10px;">Наша команда для работы над проектом</h1>
-            <table id="team__table">
-                <tr>
-                    <th>№</th>
-                    <th>Группа</th>
-                    <th>ФИО</th>
-                    <th>GitHub</th>
-                </tr>
-                <tr>
-                    <th>1</th>
-                    <td>171-334</td>
-                    <td>Новиков М.А.</td>
-                    <td><a href="https://github.com/Bors1k">link</a></td>
-                </tr>
-                <tr>
-                    <th>2</th>
-                    <td>171-334</td>
-                    <td>Павлов А.В.</td>
-                    <td><a href="https://github.com/Aleksey-Valerevich-Pavlov">link</a></td>
-                </tr>
-                <tr>
-                    <th>3</th>
-                    <td>181-326</td>
-                    <td>Базаева К.С.</td>
-                    <td><a href="https://github.com/bazaevachris">link</a></td>
-                </tr>
-            </table>
+            <h1 style="margin-bottom: 10px;">Наши команды для работы над разработкой заданий</h1>
+            <div class="team__gallery">
+                <ul id="teamSlider">
+                    <li>
+                        <p>M1_M72_Project</p>
+                        <table id="team__table">
+                            <tr>
+                                <th>№</th>
+                                <th>Группа</th>
+                                <th>ФИО</th>
+                                <th>GitHub</th>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <td>171-334</td>
+                                <td>Новиков М.А.</td>
+                                <td><a href="https://github.com/Bors1k">link</a></td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>171-334</td>
+                                <td>Павлов А.В.</td>
+                                <td><a href="https://github.com/Aleksey-Valerevich-Pavlov">link</a></td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>181-326</td>
+                                <td>Базаева К.С.</td>
+                                <td><a href="https://github.com/bazaevachris">link</a></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table id="team__table">
+                            <tr>
+                                <th>№</th>
+                                <th>Группа</th>
+                                <th>ФИО</th>
+                                <th>GitHub</th>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <td>171-334</td>
+                                <td>Новиков М.А.</td>
+                                <td><a href="https://github.com/Bors1k">link</a></td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>171-334</td>
+                                <td>Павлов А.В.</td>
+                                <td><a href="https://github.com/Aleksey-Valerevich-Pavlov">link</a></td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>181-326</td>
+                                <td>Базаева К.С.</td>
+                                <td><a href="https://github.com/bazaevachris">link</a></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table id="team__table">
+                            <tr>
+                                <th>№</th>
+                                <th>Группа</th>
+                                <th>ФИО</th>
+                                <th>GitHub</th>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <td>171-334</td>
+                                <td>Новиков М.А.</td>
+                                <td><a href="https://github.com/Bors1k">link</a></td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>171-334</td>
+                                <td>Павлов А.В.</td>
+                                <td><a href="https://github.com/Aleksey-Valerevich-Pavlov">link</a></td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>181-326</td>
+                                <td>Базаева К.С.</td>
+                                <td><a href="https://github.com/bazaevachris">link</a></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table id="team__table">
+                            <tr>
+                                <th>№</th>
+                                <th>Группа</th>
+                                <th>ФИО</th>
+                                <th>GitHub</th>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <td>171-334</td>
+                                <td>Новиков М.А.</td>
+                                <td><a href="https://github.com/Bors1k">link</a></td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>171-334</td>
+                                <td>Павлов А.В.</td>
+                                <td><a href="https://github.com/Aleksey-Valerevich-Pavlov">link</a></td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>181-326</td>
+                                <td>Базаева К.С.</td>
+                                <td><a href="https://github.com/bazaevachris">link</a></td>
+                            </tr>
+                        </table>
+                    </li> 
+                    <li>
+                        <table id="team__table">
+                            <tr>
+                                <th>№</th>
+                                <th>Группа</th>
+                                <th>ФИО</th>
+                                <th>GitHub</th>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <td>171-334</td>
+                                <td>Новиков М.А.</td>
+                                <td><a href="https://github.com/Bors1k">link</a></td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>171-334</td>
+                                <td>Павлов А.В.</td>
+                                <td><a href="https://github.com/Aleksey-Valerevich-Pavlov">link</a></td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>181-326</td>
+                                <td>Базаева К.С.</td>
+                                <td><a href="https://github.com/bazaevachris">link</a></td>
+                            </tr>
+                        </table>
+                    </li> 
+                    <li>
+                        <table id="team__table">
+                            <tr>
+                                <th>№</th>
+                                <th>Группа</th>
+                                <th>ФИО</th>
+                                <th>GitHub</th>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <td>171-334</td>
+                                <td>Новиков М.А.</td>
+                                <td><a href="https://github.com/Bors1k">link</a></td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>171-334</td>
+                                <td>Павлов А.В.</td>
+                                <td><a href="https://github.com/Aleksey-Valerevich-Pavlov">link</a></td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>181-326</td>
+                                <td>Базаева К.С.</td>
+                                <td><a href="https://github.com/bazaevachris">link</a></td>
+                            </tr>
+                        </table>
+                    </li>                     
+                </ul>
+            </div>
         </section>
-        <section id="workprogress">
-                    <h1 style="margin-bottom: 10px;">Прогресс выполнения</h1>
-                    <ul>
-                        <li style="color: green">Пересоздание моделей в инвенторе <b>13/13</b></li>
-                        <li style="color: green" >Создание чертежей для деталей <b>13/13</b></li>
-                        <li>Создание сборок и подсборок  <b>2/3</b></li>
-                        <li>Создание сборочных чертежей  <b>1/3</b></li>
-                        <li>Проверка чертежей на корректность <b>0/16</b></li>
-                        <li>Разработка и создание анимации для задания  <b>0/1</b></li>
-                        <li>Создание текстовой части задания  <b>0/1</b></li>
-                        <li>Создание критериев оценивания  <b>0/1</b></li>
-                        <li>Создание идеальных файлов анимации и фотореалистики <b>0/1</b></li>
-                        <li>Финальная компоновка файлов задания  <b>0/1</b></li>
-                    </ul>
+        <section id="gallery">
+            <div class="gallery__container">
+                <ul id="gallerySlider">
+                    <li data-thumb="img/thumb/g1.jpg">
+                        <img src="img/g1.jpg" alt="" >
+                    </li>
+                    <li data-thumb="img/thumb/g2.jpg">
+                        <img src="img/g2.jpg" alt="">
+                    </li>
+                    <li data-thumb="img/thumb/g3.jpg">
+                        <img src="img/g3.jpg" alt="">
+                    </li>
+                    <li data-thumb="img/thumb/g4.jpg">
+                        <img src="img/g4.jpg" alt="">
+                    </li>
+                    <li data-thumb="img/thumb/g1.jpg">
+                        <img src="img/g1.jpg" alt="">
+                    </li>
+                  </ul>
+            </div>
         </section>
         <section id="linkSection">
             <h1>Ссылки на связанные с проектом материалы</h1>
@@ -77,11 +251,10 @@
                 <a href="https://github.com/Bors1k/M1_M72_Project" id="github" class="linksDecor">
                     <img src="img/GitHub-Mark-120px-plus.png" alt="github_icon" style="width: 60px; height: 60px;">
                     <img src="img/GitHub_Logo.png" alt="github_logo" style="width: 125px; height: 51px;">  
-                    <p>Репозиторий проекта</p>
                 </a>
-                <a href="https://grabcad.com/library/engine-gearbox-for-the-m72-project-1" class="linksDecor">
+                <a href="https://grabcad.com" class="linksDecor">
                     <img src="img/grabcad_logo.png" alt="" srcset="" style="width: 230px; height: 80px;">
-                    <p>Используемая модель</p>
+                    <p></p>
                 </a>
             </div>
         </section>
