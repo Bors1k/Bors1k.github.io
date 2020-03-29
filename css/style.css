@@ -166,19 +166,23 @@ section#linkSection{
 }
 
 .gallery__container{
-    width: 1050px;
+    width: 682px;
 }
 #gallerySlider img{
-    width: 1050px;
-    height: 600px;
+    width: 682px;
+    height: 512px;
 }
 
 .team__gallery{
-    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+.team__gallery div {
+    margin-right: 10px;
 }
 
 @media screen and (max-width: 360px){
     section#welcome{
-/*  */
+
     }
 }
