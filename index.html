@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Конструкторское бюро</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="bootstrap-5.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
+    <script src="bootstrap-5.0.0/js/bootstrap.bundle.min.js"></script>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
@@ -51,19 +49,47 @@
         </div>
     </div>
     <!-- Проекты  -->
-    <div class="container-fluid" style="padding-top: 80px; height: 100vh;" id="project-portfolio">
+    <div class="container-fluid" style="padding-top: 80px; min-height: 100vh;" id="project-portfolio">
         <div class="d-flex flex-column align-items-center">
             <h2>Наши проекты</h2>
         </div>
-        <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+        <div class="d-flex flex-wrap align-items-start justify-content-center">
+            <div class="card" style="width: 18rem; margin-right: 20px; margin-top: 10px;">
+                <img src="assets/WS.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Разработка заданий по стандартам WS</h5>
+                    <p class="card-text">Разработка заданий по стандартам WS в компетенции "Инженерный дизайн CAD"</p>
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#project_WS">
+                        Открыть
+                    </button>
+                </div>
+            </div>
+            <div class="card item" style="width: 18rem; margin-right: 20px; margin-top: 10px;">
+                <img src="assets/robot-manipulator.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Робот-манимпулятор</h5>
+                    <p class="card-text">Создание видео-инструкций по сборке "Робота-манипулятора" и анимация его работы
+                        в Autodesk Inventor</p>
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#manipul_robot">
+                        Открыть
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="d-flex flex-wrap justify-content-center">
 
                         <div class="card" style="width: 18rem; margin-right: 20px; margin-top: 10px;">
-                            <img src="assets/scale_1200.webp" class="card-img-top" alt="...">
+                            <img src="assets/WS.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Проект 1</h5>
+                                <h5 class="card-title">Разработка заданий по стандартам WS</h5>
                                 <p class="card-text"></p>
                                 <button type="button" class="btn btn-dark" data-bs-toggle="modal"
                                     data-bs-target="#exampleModal">
@@ -74,7 +100,7 @@
 
 
                         <div class="card" style="width: 18rem; margin-right: 20px; margin-top: 10px;">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="assets/robot-manipulator.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up
@@ -147,100 +173,121 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
 
             </a>
-        </div>
+        </div> -->
     </div>
     <!-- Участники  -->
     <div class="container-fluid" style="padding-top: 80px; height: 100vh;">
         <div class="d-flex flex-column align-items-center" id="team">
             <h2>Наша команда</h2>
         </div>
-        <div class="d-flex flex-wrap justify-content-center">
-            <div class="card text-center" style="width: 10rem; margin-right: 20px; margin-top: 10px;">
+        <div class="d-flex align-items-center flex-wrap justify-content-center">
+            <div class="card text-center" style="width: 12rem; margin-right: 20px; margin-top: 10px;">
                 <img src="assets/tIflDwO9e-k.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Новиков Михаил</p>
-                  <p class="card-text">Разработка заданий WS</p>
+                    <p class="card-text">Новиков Михаил</p>
+                    <p class="card-text">Разработка заданий WS</p>
                 </div>
-              </div>
-              <div class="card text-center" style="width: 10rem; margin-right: 20px; margin-top: 10px;">
-                <img src="assets/tIflDwO9e-k.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card text-center" style="width: 12rem; margin-right: 20px; margin-top: 10px;">
+                <img src="assets/anon_pic.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Новиков Михаил</p>
-                  <p class="card-text">Разработка заданий WS</p>
+                    <p class="card-text">Базаева Кристина</p>
+                    <p class="card-text">Разработка заданий WS</p>
                 </div>
-              </div>
-              <div class="card text-center" style="width: 10rem; margin-right: 20px; margin-top: 10px;">
-                <img src="assets/tIflDwO9e-k.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card text-center" style="width: 12rem; margin-right: 20px; margin-top: 10px;">
+                <img src="assets/aranovskii.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Новиков Михаил</p>
-                  <p class="card-text">Разработка заданий WS</p>
+                    <p class="card-text">Арановский Алексей</p>
+                    <p class="card-text">Разработка заданий WS</p>
                 </div>
-              </div>
-              <div class="card text-center" style="width: 10rem; margin-right: 20px; margin-top: 10px;">
-                <img src="assets/tIflDwO9e-k.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card text-center" style="width: 12rem; margin-right: 20px; margin-top: 10px;">
+                <img src="assets/anon_pic.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Новиков Михаил</p>
-                  <p class="card-text">Разработка заданий WS</p>
+                    <p class="card-text">Крюкова Милена</p>
+                    <p class="card-text">Разработка заданий WS</p>
                 </div>
-              </div>
-              <div class="card text-center" style="width: 10rem; margin-right: 20px; margin-top: 10px;">
-                <img src="assets/tIflDwO9e-k.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card text-center" style="width: 12rem; margin-right: 20px; margin-top: 10px;">
+                <img src="assets/anon_pic.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Новиков Михаил</p>
-                  <p class="card-text">Разработка заданий WS</p>
+                    <p class="card-text">Симоненко Павел</p>
+                    <p class="card-text">Разработка заданий WS</p>
                 </div>
-              </div>
-              <div class="card text-center" style="width: 10rem; margin-right: 20px; margin-top: 10px;">
-                <img src="assets/tIflDwO9e-k.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Новиков Михаил</p>
-                  <p class="card-text">Разработка заданий WS</p>
-                </div>
-              </div>
-              <div class="card text-center" style="width: 10rem; margin-right: 20px; margin-top: 10px;">
-                <img src="assets/tIflDwO9e-k.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Новиков Михаил</p>
-                  <p class="card-text">Разработка заданий WS</p>
-                </div>
-              </div>
-              <div class="card text-center" style="width: 10rem; margin-right: 20px; margin-top: 10px;">
-                <img src="assets/tIflDwO9e-k.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Новиков Михаил</p>
-                  <p class="card-text">Разработка заданий WS</p>
-                </div>
-              </div>
-              <div class="card text-center" style="width: 10rem; margin-right: 20px; margin-top: 10px;">
-                <img src="assets/tIflDwO9e-k.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Новиков Михаил</p>
-                  <p class="card-text">Разработка заданий WS</p>
-                </div>
-              </div>
+            </div>
         </div>
     </div>
     <!-- Окна для проектов  -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal fade" id="project_WS" tabindex="-1" aria-labelledby="project_WS" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Проект 1</h5>
+                    <h5 class="modal-title" id="project_WS">Разработка заданий по стандартам WS</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque tempora facere cumque voluptas doloribus sint amet id commodi praesentium illo obcaecati dolorem deleniti ea impedit labore, omnis nesciunt? Dolorum, consectetur.
-                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/T0heH6WJrgE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <img src="assets/razrabotka_ws.jpg" class="card-img-top" alt="..." style="margin-bottom: 10px">
+                    <p>В настоящее время все большую популярность приобретают соревнования профессионального мастерства по
+                    стандартам WorldSkills (далее WS). База конкурсных заданий мала и требует актуализации ввиду
+                    постоянного развития компетенции. Кроме того, для каждой возрастной группы конкурсантов, существуют
+                    свои особенности в заданиях. Поэтому, для поддержания конкурентной среды в компетенции "Инженерный
+                    дизайн CAD", необходимо отрабатывать как можно больше различных задач, а, следовательно, и создавать
+                    их.</p>
+                    <p>И перед нами была поставлена <b>задача</b> - разработать задание для чемпиона по
+                    стандартам WS.</p>
+                    <p>Чтобы разработать полный комплект файлов для проведения чемпионата по стандартам WS
+                    “Инженерный дизайн CAD”. Необходимо выбрать подходящую модель, разбить ее на подсборки и обозначить
+                    какие детали буду моделироваться участником, а какие он будет получать готовыми. Выбрать детали и
+                    подсборки для создания чертежей, а также придумать сценарий для анимации и фотореалистичного
+                    изображения. Составить текстовую часть задания и создать сбалансированные критерии проверки в
+                    соответствии с WSSS (WorldSkills Standard Specification) </p>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="manipul_robot" tabindex="-1" aria-labelledby="manipul_robot" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="manipul_robot">Робот-манимпулятор</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/robot-manipulator.png" class="card-img-top" alt="..." style="margin-bottom: 10px">
+                    <p>Создание видео-инструкций по сборке "Робота-манипулятора" и анимация его работы в Autodesk Inventor</p>
+                    <p><b>Цель проекта</b> - Разработка анимации робота манипулятора и видео-инструкций по сборке.</p>
+                    <b>Задачи:</b>
+                    <ol>
+                        <li>Собрать робота манипулятора в Autodesk Inventor.</li>
+                        <li>Записать видео-инструкции по сборке робота.</li>
+                        <li>Сделать анимацию робота.</li>
+                    </ol>
+                    <b>Этапы работы над проектом:</b>
+                    <ol>
+                        <li>Сборка робота манипулятора.</li>
+                        <li>Запись видео-инструкций по сборке</li>
+                        <li>Запись анимации работы робота.</li>
+                        <li>Монтаж видеороликов</li>
+                    </ol>
+
+                    <b>Результат:</b>
+                    Созданы виде-инструкции по сборке робота манипулятора, записаны анимация работы робота и разлет
+                    деталей.
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- футер  -->
-        <footer>
-        </footer>
+    <footer>
+    </footer>
 </body>
 
 </html>
